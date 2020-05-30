@@ -183,13 +183,14 @@
 <script>
   var fireballSize = 22;
   var getFireballSpeed = function (windDirection) {
-    if (!windDirection) {
-      var speed = 5;
-    }
-    else {
+    var speed;
+
+    if (windDirection) {
       speed = 2;
     }
-    return speed;
+    else {
+      speed = 5;
+    }
   }
 
   var wizardSpeed = 3;
