@@ -34,7 +34,6 @@ function rand(min, max) {
 }
 
 function getRandomColor(context, player) {
-  context.fillStyle = 'hsl(255, 100%, 49%)';
   if (player === 'Вы') {
     context.fillStyle = 'rgba(255, 0, 0, 1)';
   } else {
